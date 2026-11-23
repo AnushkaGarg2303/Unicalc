@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230e8ce9'/><text x='50%' y='65%' font-size='56' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'>U</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>UniCalc – Ultimate All-in-One 3D Glassmorphism Calculator Suite</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Immediate theme initializer before render to avoid flash of light/dark -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('unicalc_theme');
+          var theme = saved ? saved : 'dark';
+          if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-B2sTEWG3.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/icons-RNNdlU-4.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-B2H4GzEd.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-Dm2CK2y_.css">
+  </head>
+  <body class="bg-slate-100 text-slate-900 dark:bg-[#090d16] dark:text-slate-100 antialiased selection:bg-brand-500 selection:text-white min-h-screen overflow-x-hidden transition-colors duration-200">
+    <div id="root"></div>
+  </body>
+</html>
